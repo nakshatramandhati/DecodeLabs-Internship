@@ -1,53 +1,46 @@
-# Project 1 - Rule-Based AI Chatbot
+# Project 2 – Data Classification Using AI
 
 ## Project Description
 
-This project is a simple Rule-Based AI Chatbot developed using Python.
+This project builds a basic data classification model using the Iris dataset and a machine learning algorithm.
 
-The chatbot responds to predefined user inputs using a dictionary and if-else decision-making logic.
+The model loads the dataset, divides the data into training and testing sets, trains the classification model, and predicts the class of a new sample.
 
-## Features
+## Dataset
 
-- Handles greetings such as hello, hi and hey
-- Answers predefined questions
-- Uses case and whitespace handling
-- Uses a continuous while loop
-- Provides a fallback response for unknown inputs
-- Supports exit commands such as bye, exit and quit
+The project uses the Iris dataset.
+
+- Dataset shape: 150 samples and 4 features
+- Classes:
+  - Setosa
+  - Versicolor
+  - Virginica
+
+## Steps Performed
+
+1. Load the Iris dataset.
+2. Separate the features and target classes.
+3. Split the data into training and testing sets.
+4. Train a classification model.
+5. Predict the classes of the test data.
+6. Calculate the model accuracy.
+7. Make an example prediction.
+
+## Results
+
+- Accuracy: 100%
+- Example predicted class: Setosa
 
 ## Technologies Used
 
 - Python
-- VS Code
+- Scikit-learn
 
 ## How to Run
 
 1. Open the project folder in VS Code.
 2. Open the terminal.
-3. Run the following command:
+3. Run:
 
-python chatbot.py
-
-4. Enter a message when prompted.
-5. Type "bye", "exit" or "quit" to stop the chatbot.
-
-## Example
-
-You: hello
-
-Bot: Hi there! Welcome to DecodeLabs.
-
-You: what is a chatbot
-
-Bot: A chatbot is a computer program that communicates with users through text or voice.
-
-You: bye
-
-Bot: Goodbye! Have a great day!
-
-## Project Structure
-
-DecodeLabs_Project1/
-│
-├── chatbot.py
-└── README.md
+```bash
+python classifier.py
